@@ -1,1 +1,30 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+@media screen and (max-width: 490px) {
+  .container {
+    position: absolute;
+    max-width: auto;
+  }
+}
+
+body {
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    12deg,
+    rgba(64, 93, 230) 10%,
+    rgba(88, 81, 219) 25%,
+    rgba(131, 58, 180) 35%,
+    rgba(193, 53, 132) 45%,
+    rgba(225, 48, 108) 65%,
+    rgba(245, 96, 64) 75%,
+    rgba(247, 119, 55) 85%,
+    rgba(252, 175, 69) 95%,
+    rgba(255, 220, 128) 100%
+  );
+  background-attachment: fixed;
+}
+
+.container {
+  padding: 10px;
+}
