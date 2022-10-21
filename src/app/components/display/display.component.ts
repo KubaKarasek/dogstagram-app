@@ -14,7 +14,6 @@ export class DisplayComponent implements OnInit {
         this.dogs.getData().subscribe(data => {
             // console.log(data);
             this.data = data;
-            console.log(this.data.message)
         })
     }
 

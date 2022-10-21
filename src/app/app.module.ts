@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './component/header/header.component';
-import { DisplayComponent } from './component/display/display.component';
+import { HeaderComponent } from './components/header/header.component';
+import { DisplayComponent } from './components/display/display.component';
 
 
 @NgModule({
