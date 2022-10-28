@@ -1,8 +1,6 @@
 # Dogstagram 🐕
 
-Simple Angular app showcasing the list of dog breeds.
-
-Proper image rendering to be implemented.
+Simple Angular app showcasing various dog breeds.
 
 ## Heroku deployment 🌐
 
