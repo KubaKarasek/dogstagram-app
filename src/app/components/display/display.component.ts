@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 import { DogsService } from 'src/services/dogs.service';
 
 @Component({
@@ -8,7 +9,10 @@ import { DogsService } from 'src/services/dogs.service';
 })
 export class DisplayComponent implements OnInit {
 
-    data:any = []
+    data: any = []
+    image: any = {
+        message: "https://images.dog.ceo/breeds/affenpinscher/n02110627_10185.jpg"
+    }
     constructor(private dogs:DogsService){
     
         this.dogs.getData().subscribe(data => {
@@ -21,4 +25,9 @@ export class DisplayComponent implements OnInit {
 
   }
 
+  displayNewImage(breed: any){
+    this.dogs.getImage(breed).subscribe(imageObj => {        
+        this.image = imageObj;
+    })
+  }
 }

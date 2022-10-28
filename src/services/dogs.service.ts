@@ -12,4 +12,8 @@ export class DogsService {
   public getData(){
     return this.http.get(`${environment.baseUrl}/breeds/list`)
   }
+
+  public getImage(breed: string){
+    return this.http.get(`${environment.baseUrl}/breed/${breed}/images/random`)
+  }
 }

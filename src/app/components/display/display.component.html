@@ -1,9 +1,8 @@
 <div class="display-container">
-  <img
-    src="https://images.dog.ceo/breeds/keeshond/n02112350_10128.jpg"
-    alt="dog-img"
-  />
-  <select name="cars" id="dropdown">
-    <option *ngFor="let breed of data.message">{{ breed }}</option>
+  <img src="{{ image.message }}" alt="dog-img" />
+  <select id="dropdown" #breed (change)="displayNewImage(breed.value)">
+    <option *ngFor="let breed of data.message">
+      {{ breed }}
+    </option>
   </select>
 </div>

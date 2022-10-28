@@ -22,7 +22,8 @@ select {
 }
 
 img {
-  width: 350px;
+  max-width: 350px;
+  max-height: 350px;
   display: block;
   border-radius: 15px;
   border-radius: 6px;
